@@ -64,7 +64,7 @@
 
     <ion-item>
       <ion-label position="floating">Confirmar Senha</ion-label>
-      <ion-input type="password" formControlName="confirmarSenha"></ion-input>
+      <ion-input type="password" formControlName="confirmarsenha"></ion-input>
       <ng-container *ngFor="let erro of mensagens.nome">
         <span
           class="msg-erro"
@@ -80,7 +80,7 @@
       expand="block"
       fill="outline"
       color="tertiary"
-      (click)="salvarCadastro"
+      (click)="salvarCadastro()"
       >SALVAR</ion-button
     >
   </form>
