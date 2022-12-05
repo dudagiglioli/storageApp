@@ -14,7 +14,6 @@
   "private": true,
   "dependencies": {
     "@angular/common": "^14.0.0",
-    "@angular/core": "^14.0.0",
     "@angular/forms": "^14.0.0",
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
@@ -41,6 +40,7 @@
     "@angular/cli": "^14.0.0",
     "@angular/compiler": "^14.0.0",
     "@angular/compiler-cli": "^14.0.0",
+    "@angular/core": "^15.0.2",
     "@angular/language-service": "^14.0.0",
     "@capacitor/cli": "4.4.0",
     "@ionic/angular-toolkit": "^6.0.0",
@@ -63,7 +63,8 @@
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
-    "typescript": "~4.7.3"
+    "typescript": "~4.7.3",
+    "webpack-dev-server": "^4.11.1"
   },
   "description": "An Ionic project"
 }
