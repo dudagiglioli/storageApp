@@ -8,6 +8,8 @@
 </ion-header>
 
 <ion-content>
+  <body>
+
   <form [formGroup]="formCadastro">
     <ion-item>
       <ion-label position="floating">Nome</ion-label>
@@ -75,13 +77,16 @@
       </ng-container>
     </ion-item>
 
+    <ion-row>
+      <ion-col size-md="6">
+        <ion-button  fill="outline" expand="block" color="tertiary" (click)="salvarCadastro()">SALVAR</ion-button>
+      </ion-col>
+      <ion-col size-md="6">
+        <ion-button fill="outline" expand="block" color="dark" routerLink="/produto"> <p> PRODUTO </p> </ion-button>
+      </ion-col>
+    </ion-row>
 
-    <ion-button
-      expand="block"
-      fill="outline"
-      color="tertiary"
-      (click)="salvarCadastro()"
-      >SALVAR</ion-button
-    >
   </form>
+</body>
 </ion-content>
+

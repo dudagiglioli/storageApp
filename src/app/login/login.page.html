@@ -1,9 +1,42 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button> </ion-back-button>
+    </ion-buttons>
+    <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
+<ion-grid>
+  <ion-list class="img2">
+    <ion-card>
+    <ion-item >
+      <ion-label>Email</ion-label>
+      <ion-input type="email" placeholder="email.exemplo@gmail.com"></ion-input>
+    </ion-item>
 
+    <ion-item>
+      <ion-label>Senha</ion-label>
+      <ion-input type="password" value="password"></ion-input>
+    </ion-item>
+  </ion-card>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6">
+          <ion-button  fill="outline" expand="block" color="dark" > <p>ENTRAR </p></ion-button>
+        </ion-col>
+        <ion-col size-md="6">
+          <ion-button fill="outline" expand="block" color="dark" routerLink="/cadastro"> <p> REGISTRAR </p> </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-col>
+      <ion-button fill="outline" expand="block" color="dark" routerLink="/tabs/tab1"> <p> ESQUECEU A SENHA </p> </ion-button>
+    </ion-col>
+    </ion-grid>
+
+  </ion-list>
+</ion-grid>
 </ion-content>

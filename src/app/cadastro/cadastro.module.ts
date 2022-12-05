@@ -18,3 +18,4 @@ import { CadastroPage } from './cadastro.page';
   declarations: [CadastroPage]
 })
 export class CadastroPageModule {}
+

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Usuario } from '../models/Usuario';
+import { StorageService } from '../services/storage.service';
 
 @Component({
   selector: 'app-tab2',
@@ -6,7 +8,21 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+  listaUsuarios: Usuario[] = [];
 
-  constructor() {}
+  constructor(private storageService: StorageService) {}
 
+  async buscarUsuarios(){
+    this.listaUsuarios = await this.storageService.getAll();
+  }
+
+  ionViewDidEnter(){
+    this.buscarUsuarios();
+  }
+
+  async excluirCadastro(email: string){
+    console.log(email)
+    await this.storageService.remove(email);
+    this.buscarUsuarios();
+  }
 }

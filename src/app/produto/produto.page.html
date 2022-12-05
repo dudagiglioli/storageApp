@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button> </ion-back-button>
+    </ion-buttons>
+    <ion-title>Produto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <body>
+
+  <form [formGroup]="formProduto">
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input formControlName="nome"></ion-input>
+      <ng-container *ngFor="let erro of mensagens.nome">
+        <span
+          class="msg-erro"
+          *ngIf="formProduto.get('nome')?.hasError('erro.tipo') && (formProduto.get('nome')?.dirty || formProduto.get('nome')?.touched)"
+        >
+          {{erro.mensagem}}
+        </span>
+      </ng-container>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label position="floating">Descrição</ion-label>
+      <ion-input formControlName="descricao"></ion-input>
+      <ng-container *ngFor="let erro of mensagens.nome">
+        <span
+          class="msg-erro"
+          *ngIf="formProduto.get('descricao')?.hasError('erro.tipo') && (formProduto.get('cpf')?.dirty || formProduto.get('cpf')?.touched)"
+        >
+          {{erro.mensagem}}
+        </span>
+      </ng-container>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Validade</ion-label>
+      <ion-input formControlName="validade"></ion-input>
+      <ng-container *ngFor="let erro of mensagens.nome">
+        <span
+          class="msg-erro"
+          *ngIf="formProduto.get('validade')?.hasError('erro.tipo') && (formProduto.get('validade')?.dirty || formProduto.get('validade')?.touched)"
+        >
+          {{erro.mensagem}}
+        </span>
+      </ng-container>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Preço</ion-label>
+      <ion-input formControlName="preco"></ion-input>
+      <ng-container *ngFor="let erro of mensagens.nome">
+        <span
+          class="msg-erro"
+          *ngIf="formProduto.get('preco')?.hasError('erro.tipo') && (formProduto.get('preco')?.dirty || formProduto.get('preco')?.touched)"
+        >
+          {{erro.mensagem}}
+        </span>
+      </ng-container>
+    </ion-item>
+
+
+    <ion-row>
+      <ion-col size-md="6">
+        <ion-button  fill="outline" expand="block" color="tertiary" (click)="salvarProduto()">SALVAR</ion-button>
+      </ion-col>
+      <ion-col size-md="6">
+        <ion-button fill="outline" expand="block" color="dark" routerLink="/tab1"> <p> INÍCIO </p> </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </form>
+</body>
+</ion-content>
+
+

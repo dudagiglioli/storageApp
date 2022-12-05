@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,36 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.b1 {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background: url("https://i.pinimg.com/236x/8b/28/5b/8b285bbec05ef1297a1e5e17bb46b4fa.jpg")
+    no-repeat;
+  background-size: cover;
+  margin: 0 !important;
+}
+
+.img2{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background: url("https://i.pinimg.com/originals/c7/4d/ff/c74dff7faa91b670251fbae0c5f0f189.jpg")
+    no-repeat;
+  background-size: cover;
+  margin: 0 !important;
+}
+
+.img3{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background: url(" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCg2iy5KEmB_tILBv_IUVjBcvquDAOezMs1s_Cv7GnRsETh0ZWsEmQVEM6q-H5OQXtlfM&usqp=CAU")
+    no-repeat;
+  background-size: cover;
+  margin: 0 !important;
+}
